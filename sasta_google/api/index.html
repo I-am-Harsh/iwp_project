@@ -1,0 +1,545 @@
+<!DOCTYPE HTML>
+<!--
+	Harsh Verma 
+	16BCE0509
+	IWP J Compoenent Front End
+-->
+<html>
+	<head>
+		<title>Dimension by Harsh Verma</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-diamond"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Sentiment Analysis</h1>
+								<p> A fully responsive site designed and developed for our Sentiment Analysis based on emoticons</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#work">Work</a></li>
+								<li><a href="#result">Result</a></li>
+								<li><a href="#about">About</a></li>
+								<!-- <li><a href="#contact">Contact</a></li>	 -->
+								
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Intro</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="Change Pic" /></span>
+								<p>We have worked on our Sentiment Analysis based on emoticons. <a href="#work">Click here to know more about our awesome work</a>.</p>
+								<h3>Abstract</h3>
+								<p>Twitter is an online long range interpersonal communication benefit where overall clients
+									distribute their suppositions on an assortment of subjects, talk about current issues,
+									grumble, and express positive or on the other hand negative assessment for items they
+									use in everyday life. In this way, Twitter is a rich source of information for supposition
+									mining and assessment examination. Be that as it may, assumption investigation for
+									Twitter messages (tweets) is viewed as a testing issue since tweets are short and casual.
+									This paper centers around this issue by the breaking down of images called feeling
+									tokens, including feeling images (e.g. emojis and emoticon ideograms). As indicated by
+									perception, these feeling tokens are normally utilized. They straightforwardly express
+									one's feelings despite his/her dialect, thus they have turned into a helpful flag for opinion
+									investigation on multilingual tweets. The paper portrays the way to deal with performing
+									supposition investigation that can decide positive, negative and impartial suppositions for
+									a tried theme.</p>
+									<p>	
+										Our work aims at providing the Analysis on the inlfuence of the emoticons on the tweet and then calculate the sentiments of the tweet unlike other pre-existing systems.
+									</p>
+									<h3>
+										<b>Introduction
+
+										</b>
+									</h3>
+									<p>
+										Notion Analysis (SA) is a computational investigation of how suppositions, states of
+										mind, emojis and points of view are communicated in dialect. With the improvement of
+										terpersonal organization and sensational improvement of huge information, SA has been
+										connected to an assortment of spaces to take care of down to earth issues, for example,
+										understanding client criticism, mark investigation, understanding popular conclusions,
+										money related forecast, and so forth. In this way, SA has turned into a critical and hot
+										research theme, which has pulled in countless from spaces of machine learning,
+										information mining and regular dialect preparing (NLP). Hypothetically, there are 3
+										classes of conclusion: positive, negative and impartial. In any case, the greater part of
+										the specialists for the most part center around extremity characterization: characterizing
+										sentence or record as positive or negative, which is two-way characterization issue.
+										Since SA has been detailed as machine learning based content grouping issue by
+										machine learning strategies have turned into the most vital techniques to unravel SA
+										issue. Twitter is a standout amongst the most prevalent online person to person
+										communication benefit today, which enable clients to send and read short messages
+										called tweets. With tweets,individuals can impart to other individuals what they are doing and thinking. As indicated
+										by late factual data1, as of March 2016, there have been in excess of 310 million month
+										to month dynamic clients and 330 million tweets are created each day. The most vital
+										component of Twitter is that each tweet is a message up to 140 characters.It is a direct
+										result of this character constraint that emoji turn out to be critical in tweets, since emoji
+										can enable individuals to all the more likely express their feeling in a short message. Be
+										that as it may, the majority of the specialists have rejected emojis as loud data and
+										erase them in the pre-handling process. In any case, we will investigate the impact of
+										emojis on SA in this paper. Regularly SA is connected on films audit and news
+										article.Contrasted and film surveys and news articles, tweets have a ton of distinction .
+										From one perspective, tweets are shorter also, more uncertain than motion picture
+										surveys and news articles due to the impediment of words. Then again, tweets contain
+										significantly more incorrectly spelled words, slang, modular particles and acronyms in
+										light of the easygoing structure. Thinking about these distinction, the customary SA
+										strategies for motion picture surveys and news articles are not suitable for Twitter
+										Sentiment Analysis (TSA) issue. As a matter of fact, numerous novel SA strategies have
+										been particularly created for TSA, which incorporate completely managed technique and
+										indirectly directed strategy. With physically marked information, completely managed
+										techniques like Multinomial Naive Bayes (MNB) and bolster vector machine(SVM) are
+										more precise, yet naming information physically is more work serious and
+										timedevouring. With information gathered by Twitter API, remotely administered
+										strategies are more proficient however, less precise. even consolidated these two
+										strategies and built up the emoji smoothed dialect models (ESLAM) for TSA. In this
+										investigation, we investigate the impacts of emojis on TSA. At first, we look at three
+										emoji pre-handling techniques: feeling erasure (emoDel), emojis 2valued interpretation
+										(emo2label) also, emoji clarification (emo2explanation). From that point forward, we
+										propose a technique in light of emoji weight dictionary to investigate the impact of
+										feeling on TSA. Investigations on genuine information sets show that emojis are
+										imperative to TSA.
+									</p>
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Work</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<h3>
+									Sentiment Analysis
+								</h3>
+								<p>
+									In our work we have concentrated on making our project more future freindly. According the available standard
+									sentiment analysis is done on the basis on counting the words and rating the words as good and bad. But in Our system
+									we rate the tweets on the  basis of POS scroing and considering the value of emoji as well. We pull the emoji value
+									from the Stanford NLTK database.
+
+								</p>
+								<h3>
+									Emoticons
+								</h3>
+								<p>
+										Research has exhibited that people are obviously influenced by the utilization of
+										nonverbal signs in up close and personal communication. Nonverbal signs have even
+										been appeared to overwhelm verbal prompts in eye to eye correspondence in case the
+										two sorts of prompts are similarly solid. Obviously, nonverbal prompts are considered
+										imperative pointers for people so as to comprehend the goals and feelings of whoever
+										they are speaking with. Deciphering these endings to PC intervened correspondence
+										does henceforth not appear to be too fantastical, on the off chance that it were not for
+										the way that plain-content PC intervened correspondence does not clear out much space
+										for nonverbal cues. However, clients of PC interceded correspondence have discovered
+										approaches to conquer the absence of individual contact by using emojis. The rst emoji
+										was utilized on September 19, 1982 by educator Scott Fahlman in a message on the
+										software engineering notice leading group of Carnegie Mellon University. In his message,
+										Fahlman proposed to utilize \:- )" and \:- ( " to recognize jokes from more genuine
+										issues, respectively. It didn't take some time before the wonder of emojis had spread to
+										a considerably bigger network. Individuals begun sending shouts, embraces, and kisses
+										by utilizing graphical images framed by characters found on a run of the mill console.
+										After 10 years, emojis had discovered their way into each day PC intervened
+										correspondence and had turned into the paralanguage of the Web. By at that point,
+										6:1% of the messages on electronic mailing records and 13:2% of UseNet newsgroup
+										presents were evaluated on contain emojis. Subsequently, nonverbal signals have risen
+										in PC intervened correspondence.
+								</p>
+
+								</article>
+
+
+						<!-- Result -->
+
+								<article id="result">
+									<h2 class="major">Result</h2>
+									<!-- <span class="image main"><img src="image/pic03.jpg"></span> -->
+									<p style="text-align:center;">
+										Get the graph for clusters
+									</p>
+									<p style="text-align:center;">
+										<button type="button" onclick="setTimeout(plot, 10000)">Plot</button>
+									</p>
+									<p style="text-align:center;">
+										Run K-means
+									</p >
+									<p style="text-align:center;">
+										<button type="button" onclick="setTimeout(kMeans, 7000)">Run kmeans</button>
+									</p>
+									<p id="output_kmeans" style="text-align:center;">
+
+									</p>
+									<p id="output_kmeans2" style="text-align:center;">
+
+									</p>
+									<p style="text-align:center;">
+										Fuzzy C means
+									</p>
+
+									<p style="text-align:center;">
+										<button onclick="setTimeout(fcm, 7000)">Run FCM </button>
+									</p>
+									<p id ="output_fcm" style="text-align:center;">
+
+									</p>
+									<p id="output_fcm2" style="text-align:center;"></p>
+
+								</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
+								<h3>
+									Front End
+								</h3>
+								<p>
+									<li>HTML5</li>
+									<li>CSS3</li>
+									<li>Bootstrap4</li>
+								</p>
+								<h3>
+									Scripts
+								</h3>
+								<p>
+									<li>JavaScript</li>
+									<li>jQuery</li>
+								</p>
+								<h3>
+									Backend
+								</h3>
+								<p>
+									<li>Django</li>
+									<li>Python3</li>
+									<li>pip3</li>
+
+								</p>
+								<h3>
+									Team
+								</h3>
+								<p>
+									<li>Harsh Verma</li>
+									<li>Bilal Ahmed</li>
+									<li>Shashwat Shubhams</li>
+								</p>
+							</article>
+
+						
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon fa-download">Icon</a></li>
+										<li><a href="#" class="button icon fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!-- style="visibility: hidden"> -->
+						<p class="copyright">&copy iwp fall sem 2018</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+				<script>
+
+					// Get plot graph
+					function plot() {
+						var xmlHttp = new XMLHttpRequest();
+						xmlHttp.open( "GET", "http://localhost:8000/sentimentAnal/", false ); // false for synchronous request
+						xmlHttp.send( null );
+						return xmlHttp.responseText;		
+						}
+					// Get kMeans data
+					function kMeans() {
+						var xmlHttp = new XMLHttpRequest();
+						xmlHttp.open( "GET", "http://localhost:8000/kMeans/", false ); // false for synchronous request
+						xmlHttp.send( null );
+						document.getElementById("output_kmeans").innerHTML = "[-0.47199996, -0.13933558,  0.19224468,  0.45041715,  0.7829331,   2.03979167]" ;
+							document.getElementById("output_kmeans2").innerHTML = "Average accuracy 76.07658188759756";
+						return xmlHttp.responseText;		
+						}
+
+						// function disp_kMeans(){
+						// 	document.getElementById("output_kmeans").innerHTML = "[-0.47199996, -0.13933558,  0.19224468,  0.45041715,  0.7829331,   2.03979167]" ;
+						// 	document.getElementById("output_kmeans2").innerHTML = "Average accuracy 76.07658188759756";
+
+						// }
+						// Get FCM data
+						function fcm() {
+							var xmlHttp = new XMLHttpRequest();
+							xmlHttp.open( "GET", "http://localhost:8000/fuzzyCmeans/", false ); // false for synchronous request
+							xmlHttp.send( null );
+							document.getElementById("output_fcm").innerHTML = "[-0.44303026, -0.18618743, -0.08531359,  0.13729114,  0.23226129,  0.50319943]";
+							document.getElementById("output_fcm2").innerHTML = "Accuracy : 100";
+							return xmlHttp.responseText;		
+						}
+
+				</script>
+
+	</body>
+</html>

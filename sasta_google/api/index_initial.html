@@ -1,0 +1,19 @@
+<html>
+<head>
+    <script>
+
+        function analysis() {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open( "GET", "http://localhost:8000/sentimentAnal/", false ); // false for synchronous request
+            xmlHttp.send( null );
+            return xmlHttp.responseText;
+        }
+    </script>
+</head>
+
+
+<body>
+
+    <button type="button" onclick="analysis()">Click Me</button>
+</body>
+</html>
